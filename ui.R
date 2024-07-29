@@ -14,7 +14,7 @@ fluidPage(
       textOutput("output_text")
     ),
     mainPanel(
-      fluidRow(style = 'overflow-x: auto','overflow-y : auto',DT::dataTableOutput("mergedTable")),
+      fluidRow(style = 'overflow-x: auto',DT::dataTableOutput("mergedTable")),
       downloadButton("download_mergedTable", "Download Raw results Table"),
       downloadButton("download_final_results", "Download Final Dataset Results")
       
