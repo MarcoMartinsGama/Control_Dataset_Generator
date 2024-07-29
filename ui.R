@@ -4,7 +4,7 @@ library(DT)
 
 fluidPage(
   useShinyjs(),
-  titlePanel("Fnal Dataset Generatpr"),
+  titlePanel("Fnal Dataset Generator"),
   sidebarLayout(
     sidebarPanel(
       fileInput("saintList", "SAINT list.txt (ALL OF THEM)", multiple = TRUE),

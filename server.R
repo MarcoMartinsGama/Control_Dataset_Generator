@@ -1,5 +1,6 @@
 library(shiny)
 
+options(shiny.maxRequestSize = 1000*1024^2)
 if (!requireNamespace("shinyjs", quietly = TRUE)) install.packages("shinyjs")
 if (!requireNamespace("dplyr", quietly = TRUE)) install.packages("dplyr")
 if (!requireNamespace("tidyr", quietly = TRUE)) install.packages("tidyr")
