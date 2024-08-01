@@ -90,12 +90,12 @@ function(input, output, session) {
     })
  
     output$download_mergedTable <- downloadHandler(
-      filename = function() { "RawDataset.txt" },
+      filename = function() { "RawDatasetControl.txt" },
       content = function(file) {
         write.table(merged_df, file, sep = "\t", row.names = FALSE, quote = FALSE)})
     
     output$download_final_results <- downloadHandler(
-      filename = function() { "FullDataset.txt" },
+      filename = function() { "ControlDataset.txt" },
       content = function(file) {
         write.table(final_results, file, sep = "\t", row.names = FALSE, quote = FALSE)})
   })
